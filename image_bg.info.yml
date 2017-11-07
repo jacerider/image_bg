@@ -1,0 +1,5 @@
+name: Image BG
+type: module
+description: Display images as background images within elements.
+core: 8.x
+package: Custom

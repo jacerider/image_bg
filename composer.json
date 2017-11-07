@@ -1,0 +1,14 @@
+{
+  "name": "drupal/image_bg",
+  "type": "drupal-module",
+  "description": "Display images as background images within elements.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/image_bg",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/image_bg",
+    "source": "http://cgit.drupalcode.org/image_bg"
+  },
+  "require": { }
+}
