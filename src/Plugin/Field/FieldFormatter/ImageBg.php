@@ -34,6 +34,7 @@ class ImageBg extends ImageFormatter {
    */
   public function viewElements(FieldItemListInterface $items, $langcode) {
     $elements = [];
+    $files = $this->getEntitiesToView($items, $langcode);
 
     // Early opt-out if the field is empty.
     if (empty($files)) {
@@ -65,6 +66,7 @@ class ImageBg extends ImageFormatter {
         '#type' => 'html_tag',
         '#tag' => 'div',
         '#attributes' => [
+          'class' => ['bg', 'image'],
           'style' => [
             'background-image' => sprintf("background-image: url('%s');", $image_url),
           ],

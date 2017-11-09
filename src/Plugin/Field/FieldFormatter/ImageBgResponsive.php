@@ -121,14 +121,11 @@ class ImageBgResponsive extends ResponsiveImageFormatter {
         }
       }
       $element['#attributes']['class'][] = $id;
+      $element['#attributes']['class'][] = 'bg';
+      $element['#attributes']['class'][] = 'image';
       $elements[] = $element;
     }
 
-    if (count($elements) == 1) {
-      // If we only have one image, we use the wrapping div.
-      $elements = $elements[0];
-      $elements[] = [];
-    }
     return $elements;
   }
 
