@@ -9,6 +9,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Cache\Cache;
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Render\Markup;
 
 /**
  * Plugin implementation of the video field formatter.
@@ -106,7 +107,7 @@ class ImageBgResponsive extends ResponsiveImageFormatter {
           // will deactivate.
           $media = str_replace('screen (max-width', 'screen and (max-width', $media);
           $style = sprintf('%s {', '.' . $id);
-          $style .= sprintf("background-image: url('%s');", $src);
+          $style .= sprintf("background-image: url('%s');", urldecode($src));
           $style .= '}';
           $element['#attached']['html_head'][] = [
             [
@@ -114,7 +115,7 @@ class ImageBgResponsive extends ResponsiveImageFormatter {
               '#attributes' => [
                 'media' => $media,
               ],
-              '#value' => $style,
+              '#value' => Markup::create($style),
             ],
             $id . implode('__', [$source_i, $src_i]),
           ];
