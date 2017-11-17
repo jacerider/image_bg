@@ -78,11 +78,11 @@ class ImageBg extends ImageFormatter {
       ];
     }
 
-    if (count($elements) == 1) {
-      // If we only have one image, we use the wrapping div.
-      $elements = $elements[0];
-      $elements[] = [];
-    }
+    // if (count($elements) == 1) {
+    //   // If we only have one image, we use the wrapping div.
+    //   $elements = $elements[0];
+    //   $elements[] = [];
+    // }
     return $elements;
   }
 
