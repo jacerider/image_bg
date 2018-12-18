@@ -1,14 +1,20 @@
 {
-  "name": "drupal/image_bg",
+  "name": "jacerider/image_bg",
+  "description": "Place background images on elements.",
   "type": "drupal-module",
-  "description": "Display images as background images within elements.",
-  "keywords": ["Drupal"],
   "license": "GPL-2.0+",
-  "homepage": "https://www.drupal.org/project/image_bg",
-  "minimum-stability": "dev",
+  "homepage": "https://github.com/jacerider/image_bg",
+  "authors": [
+    {
+      "name": "Cyle Carlson (JaceRider)",
+      "email": "jacerider@gmail.com",
+      "role": "Maintainer"
+    }
+  ],
   "support": {
-    "issues": "https://www.drupal.org/project/issues/image_bg",
-    "source": "http://cgit.drupalcode.org/image_bg"
+    "issues": "https://github.com/jacerider/image_bg/issues",
+    "source": "https://github.com/jacerider/image_bg"
   },
+  "minimum-stability": "dev",
   "require": { }
 }
